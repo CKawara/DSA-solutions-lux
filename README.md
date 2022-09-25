@@ -1,3 +1,3 @@
-# DSA-solutions-lux
+# DSA-solutions
 
-These are Hackerrank solutions for Lux academy's data structures and algorithms Bootcamp.
+These are solutions for various technical problems 

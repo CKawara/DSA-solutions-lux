@@ -9,6 +9,19 @@
 # format("555 123 1234") => "555-123-12-34"
 # format("(+1) 888 33x19") => "188-833-19"
 
+=begin
+ Regex explanation
+
+ R = /
+    \d{2,3}   # match 2 or 3 digits (greedily)
+    (?=       # begin positive lookahead
+      \d{2,3} # match 2 or 3 digits 
+      |       # or
+      \z      # match the end of the string
+    )         # end positive lookahead
+    /x        # free-spacing regex definition mode
+
+=end
 
 def format(s)
     # your code here
